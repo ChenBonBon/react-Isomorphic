@@ -1,0 +1,6 @@
+{
+    "jumpToAliasFile.alias": {
+        "@server": "/Volumes/Personal/Code/ssr-demo/src/server",
+        "@client": "/Volumes/Personal/Code/ssr-demo/src/client"
+    }
+}
