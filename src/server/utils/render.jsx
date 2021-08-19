@@ -13,6 +13,7 @@ const statsFile = path.resolve(
   __dirname,
   "../../dist/server/loadable-stats.json"
 );
+const host = "http://localhost";
 
 const extractor = new ChunkExtractor({ statsFile });
 
@@ -49,7 +50,8 @@ const render = (request) => {
   <meta charSet="UTF-8" />
   <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="http://localhost:8888/public/favicon.ico">
+  <link rel="shortcut icon" href="${host}/client/public/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="${host}/client/main.css">
   <title>XDP</title>
 </head>
 <body>
@@ -57,7 +59,7 @@ const render = (request) => {
   <script>
     window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState)};
   </script>
-  <script src="http://localhost:8888/client/main.js"></script>
+  <script src="${host}/client/main.js"></script>
 </body>
 </html>`,
       });

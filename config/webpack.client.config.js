@@ -6,6 +6,7 @@ const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 const { merge } = require("webpack-merge");
 const WebpackBar = require("webpackbar");
 const baseConfig = require("./webpack.base.config.js");
+const CopyPlugin = require("copy-webpack-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
 const resolve = (filepath) => path.resolve(__dirname, filepath);
@@ -29,6 +30,11 @@ const config = {
     new WebpackManifestPlugin({
       writeToFileEmit: true,
       fileName: `manifest.json`,
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: resolve("../public"), to: resolve("../dist/client/public") },
+      ],
     }),
   ].filter(Boolean),
   module: {
@@ -130,6 +136,14 @@ const config = {
             },
           },
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },

@@ -1,4 +1,3 @@
-// import koaStatic from 'koa-static'
 import Koa from "koa";
 import render from "./utils/render";
 
