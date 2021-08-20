@@ -13,7 +13,7 @@ const statsFile = path.resolve(
   __dirname,
   "../../dist/server/loadable-stats.json"
 );
-const host = "http://localhost";
+const host = "http://localhost:8888";
 
 const extractor = new ChunkExtractor({ statsFile });
 
@@ -68,7 +68,28 @@ const render = (request) => {
     // resolve所有asyncData
     Promise.all(promises)
       .then(() => {
-        generateHtml(request);
+        const { route } = matches[0];
+        if (route.ssr === false) {
+          resolve({
+            error: undefined,
+            html: `<html lang="zh-CN">
+            <head>
+              <meta charSet="UTF-8" />
+              <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <link rel="shortcut icon" href="${host}/client/public/favicon.ico">
+              <link rel="stylesheet" type="text/css" href="${host}/client/main.css">
+              <title>XDP</title>
+            </head>
+            <body>
+              <div id="app"></div>
+              <script src="${host}/client/main.js"></script>
+            </body>
+            </html>`,
+          });
+        } else {
+          generateHtml(request);
+        }
       })
       .catch((error) => {
         reject(error);

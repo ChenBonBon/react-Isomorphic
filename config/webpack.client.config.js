@@ -18,6 +18,7 @@ const config = {
     path: resolve("../dist/client/"),
     filename: "[name].js",
   },
+  devtool: isDev ? "inline-source-map" : "source-map",
   plugins: [
     isDev &&
       new WebpackBar({

@@ -23,6 +23,7 @@ const config = {
       allowlist: [/\.less$/],
     }),
   ],
+  devtool: isDev ? "inline-source-map" : "source-map",
   plugins: [
     isDev &&
       new NodemonPlugin({

@@ -3,8 +3,9 @@ import loadable from "@loadable/component";
 const routes = [
   {
     path: "/",
-    component: loadable(() => import("@client/pages/Home")),
+    component: loadable(() => import("@client/pages/Home"), { ssr: false }),
     exact: true,
+    ssr: false,
   },
   {
     path: "/user",
@@ -32,8 +33,9 @@ const routes = [
   },
   {
     path: "/login",
-    component: loadable(() => import("@client/pages/Login")),
+    component: loadable(() => import("@client/pages/Login"), { ssr: false }),
     exact: true,
+    ssr: false,
   },
 ];
 
