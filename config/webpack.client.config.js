@@ -33,9 +33,7 @@ const config = {
       fileName: `manifest.json`,
     }),
     new CopyPlugin({
-      patterns: [
-        { from: resolve("../public"), to: resolve("../dist/client/public") },
-      ],
+      patterns: [{ from: resolve("../public") }],
     }),
   ].filter(Boolean),
   module: {

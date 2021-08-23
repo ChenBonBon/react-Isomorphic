@@ -1,0 +1,1 @@
+window.configLanguage = 'umi_locale';

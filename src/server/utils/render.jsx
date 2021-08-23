@@ -9,11 +9,10 @@ import { createStore } from "../../store";
 const { matchRoutes } = require("react-router-config");
 
 const path = require("path");
-const statsFile = path.resolve(
-  __dirname,
-  "../../dist/server/loadable-stats.json"
-);
-const host = "http://localhost:8888";
+const isDev = process.env.NODE_ENV === "development";
+
+const resolve = (filepath) => path.resolve(__dirname, filepath);
+const statsFile = resolve("../../dist/server/loadable-stats.json");
 
 const extractor = new ChunkExtractor({ statsFile });
 
@@ -31,7 +30,52 @@ const render = (request) => {
         : Promise.resolve(null);
     });
 
-    const generateHtml = (request) => {
+    const generateHtml = (html) => {
+      const preloadedState = store.getState();
+
+      return `<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="${
+      isDev ? "/public" : ""
+    }/icons/blank.png" type="image/x-icon" />
+    <link href="${isDev ? "/public" : ""}/css/iconfont.css" rel="stylesheet" />
+    <link href="${isDev ? "/public" : ""}/css/theme.css" rel="stylesheet" />
+    <script src="${isDev ? "/public" : ""}/js/common.js"></script>
+    <script src="${isDev ? "/public" : ""}/js/apiUrl/apiUrl.js"></script>
+    <script>
+      const img = document.createElement("img");
+      img.onload = function () {
+        document.querySelector('link[rel="icon"]').href = window.favicon;
+      };
+      img.src = window.favicon;
+
+      document.title = window.documentTitle || "XDP 翼数坊";
+  </script>
+  </head>
+  <body>
+    <div id="app">${html ? html : ""}</div>
+    ${
+      html
+        ? `<script>
+      window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState)};
+    </script>`
+        : ""
+    }
+    ${
+      isDev
+        ? '<script src="/client/main.js"></script>'
+        : '<script src="/main.js"></script>'
+    }
+  </body>
+</html>`;
+    };
+
+    const generateSSR = (request) => {
       const preloadedState = store.getState();
       const html = renderToString(
         <ChunkExtractorManager extractor={extractor}>
@@ -45,50 +89,23 @@ const render = (request) => {
 
       resolve({
         error: undefined,
-        html: `<html lang="zh-CN">
-<head>
-  <meta charSet="UTF-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="${host}/client/public/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="${host}/client/main.css">
-  <title>XDP</title>
-</head>
-<body>
-  <div id="app">${html}</div>
-  <script>
-    window.__PRELOADED_STATE__ = ${JSON.stringify(preloadedState)};
-  </script>
-  <script src="${host}/client/main.js"></script>
-</body>
-</html>`,
+        html: generateHtml(html),
       });
     };
 
     // resolve所有asyncData
     Promise.all(promises)
       .then(() => {
-        const { route } = matches[0];
-        if (route.ssr === false) {
-          resolve({
-            error: undefined,
-            html: `<html lang="zh-CN">
-            <head>
-              <meta charSet="UTF-8" />
-              <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              <link rel="shortcut icon" href="${host}/client/public/favicon.ico">
-              <link rel="stylesheet" type="text/css" href="${host}/client/main.css">
-              <title>XDP</title>
-            </head>
-            <body>
-              <div id="app"></div>
-              <script src="${host}/client/main.js"></script>
-            </body>
-            </html>`,
-          });
-        } else {
-          generateHtml(request);
+        if (matches.length > 0) {
+          const { route } = matches[0];
+          if (route.ssr === false) {
+            resolve({
+              error: undefined,
+              html: generateHtml(),
+            });
+          } else {
+            generateSSR(request);
+          }
         }
       })
       .catch((error) => {
