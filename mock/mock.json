@@ -1,0 +1,11 @@
+{
+  "GET /fetchUser": {
+    "name": "John Smith",
+    "age": 10,
+    "id": "@guid()",
+    "displayName": "@cword(2|5)",
+    "email": "@email()",
+    "mobile": "@integer(0)",
+    "system_role": ""
+  }
+}

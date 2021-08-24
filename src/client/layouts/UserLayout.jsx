@@ -2,6 +2,7 @@ import { Tabs } from "antd";
 import { Route, Switch, useHistory, useLocation } from "react-router-dom";
 
 const { TabPane } = Tabs;
+
 const UserLayout = ({ childRoutes }) => {
   const history = useHistory();
   const location = useLocation();

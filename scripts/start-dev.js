@@ -17,6 +17,7 @@ const clientDevServer = new WebpackDevServer(clientCompiler, {
   publicPath: "/client/",
   disableHostCheck: false,
   compress: true,
+  before: require("../mock"),
 });
 
 clientDevServer.listen(8888, (err) => {
