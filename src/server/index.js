@@ -1,14 +1,35 @@
 import Koa from "koa";
+import path from "path";
 import { getJsonFile } from "../../src/utils/util";
 import render from "./utils/render";
 const Mock = require("mockjs");
 const { pathToRegexp } = require("path-to-regexp");
+const fs = require("fs");
+
+const apiUrls = fs.readFileSync(
+  path.resolve(__dirname, "../../public/js/apiUrl/apiUrl.js"),
+  "utf-8"
+);
+
+eval(apiUrls);
 
 const app = new Koa();
 
 app.use(async (ctx) => {
-  const { request } = ctx;
+  const { request, protocol, host, hostname } = ctx;
   const { url } = request;
+
+  global.window = {
+    navigator: {
+      userAgent: request.get("User-Agent"),
+    },
+    location: {
+      protocol: protocol + ":",
+      origin: protocol + "://" + host,
+      hostname,
+      host,
+    },
+  };
 
   if (url.startsWith("/mock")) {
     const apiMap = getJsonFile("../../mock/mock.json");

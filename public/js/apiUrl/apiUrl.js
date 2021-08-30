@@ -1,65 +1,69 @@
 globalThis.XDPApi = "http://dataset.hkstp.dev.curisinsight.com/v3";
-window.CMSApi = "http://cms.hkstp.dev.curisinsight.com/api/v2";
-window.XDPProApi = "http://project.hkstp.dev.curisinsight.com/api/v2";
-window.XFSApi = "http://xfs2-upload-gateway.hkstp.dev.curisinsight.com/v2";
-window.WSApi = "http://workspace.hkstp.dev.curisinsight.com/api/v2";
-window.AppApi = "http://app.hkstp.dev.curisinsight.com/api/v2";
-window.mapUri = "/js/map/";
-window.mockDate = "2019-03-01";
-window.benchmarkMonth = 10;
-window.benchmarkWeek = 5;
-window.benchmarkDay = 2;
-window.FuwuApi = "http://fuwu-api.hkstp.dev.curisinsight.com/api/v2";
-window.purchaseFlag = false;
-window.DaasApicall = true;
-window.DaasApiUrl = "http://daas-apps.hkstp.dev.curisinsight.com/api/v2";
-window.DashboardAppId = "00ec61b6668b47e48a167b3093286c5b";
-window.DaasAppId = "02214ebe80cb4069a73e5c1f58169eda";
-window.DaasAppVersionId = "01f7685ce2e54cb7b8de52fa96f7f33b";
-window.operationApi = "https://operation-api.hkstp.dev.curisinsight.com/api/v2";
-window.newOperationApi = "https://account.hkstp.dev.curisinsight.com/v3";
-window.cloudReport = "http://report.hkstp.dev.curisinsight.com/v3";
-window.DashboardApi = "http://dashboard-gateway.hkstp.dev.curisinsight.com/v1";
-window.DashboardWeb =
+globalThis.CMSApi = "http://cms.hkstp.dev.curisinsight.com/api/v2";
+globalThis.XDPProApi = "http://project.hkstp.dev.curisinsight.com/api/v2";
+globalThis.XFSApi = "http://xfs2-upload-gateway.hkstp.dev.curisinsight.com/v2";
+globalThis.WSApi = "http://workspace.hkstp.dev.curisinsight.com/api/v2";
+globalThis.AppApi = "http://app.hkstp.dev.curisinsight.com/api/v2";
+globalThis.mapUri = "/js/map/";
+globalThis.mockDate = "2019-03-01";
+globalThis.benchmarkMonth = 10;
+globalThis.benchmarkWeek = 5;
+globalThis.benchmarkDay = 2;
+globalThis.FuwuApi = "http://fuwu-api.hkstp.dev.curisinsight.com/api/v2";
+globalThis.purchaseFlag = false;
+globalThis.DaasApicall = true;
+globalThis.DaasApiUrl = "http://daas-apps.hkstp.dev.curisinsight.com/api/v2";
+globalThis.DashboardAppId = "00ec61b6668b47e48a167b3093286c5b";
+globalThis.DaasAppId = "02214ebe80cb4069a73e5c1f58169eda";
+globalThis.DaasAppVersionId = "01f7685ce2e54cb7b8de52fa96f7f33b";
+globalThis.operationApi =
+  "https://operation-api.hkstp.dev.curisinsight.com/api/v2";
+globalThis.newOperationApi = "https://account.hkstp.dev.curisinsight.com/v3";
+globalThis.cloudReport = "http://report.hkstp.dev.curisinsight.com/v3";
+globalThis.DashboardApi =
+  "http://dashboard-gateway.hkstp.dev.curisinsight.com/v1";
+globalThis.DashboardWeb =
   "http://enigma-dashboard.hkstp.dev.curisinsight.com/dashboard/builder";
-window.TicketApi = "http://ticket.hkstp.dev.curisinsight.com/api/v2/xdp";
-window.NotificationApi = "https://notification.hkstp.dev.curisinsight.com/v3";
-window.WorkflowApi = "http://workflow.hkstp.dev.curisinsight.com/api/v2";
-window.domainLength = 3;
-window.uploadService = "https://xdp.basebit.me/get_started/111";
-window.awsService = "http://aws.hkstp.dev.curisinsight.com/v1";
-window.termsLink = "https://xdp.basebit.me/get_started/120";
-window.categoryRequirementsLink = "https://xdp.basebit.me/get_started/100";
-window.YifangUrl = "http://hkstp.dev.basebit.ai/orginfo/";
-window.publicCloudFlag = false;
-window.registryApi = "http://registry-api.hkstp.dev.curisinsight.com/v3";
-window.DashboardApp =
+globalThis.TicketApi = "http://ticket.hkstp.dev.curisinsight.com/api/v2/xdp";
+globalThis.NotificationApi =
+  "https://notification.hkstp.dev.curisinsight.com/v3";
+globalThis.WorkflowApi = "http://workflow.hkstp.dev.curisinsight.com/api/v2";
+globalThis.domainLength = 3;
+globalThis.uploadService = "https://xdp.basebit.me/get_started/111";
+globalThis.awsService = "http://aws.hkstp.dev.curisinsight.com/v1";
+globalThis.termsLink = "https://xdp.basebit.me/get_started/120";
+globalThis.categoryRequirementsLink = "https://xdp.basebit.me/get_started/100";
+globalThis.YifangUrl = "http://hkstp.dev.basebit.ai/orginfo/";
+globalThis.publicCloudFlag = false;
+globalThis.registryApi = "http://registry-api.hkstp.dev.curisinsight.com/v3";
+globalThis.DashboardApp =
   "http://dashboardrunner-gateway.hkstp.dev.curisinsight.com/v3";
-window.regionName = "cn-northwest-1";
-window.enableTwoStepVerification = true;
-window.convertChinese = false;
-window.linkTool = "https://cms-fe-xdp-v3-aws.basebit.me/get_started/87";
-window.downloadDataset = false;
-window.documentTitle = "STP Platform";
-window.logo = "https://cdn.basebit.me/xdp/xdp_logo.svg?1";
-window.favicon = "/icons/favicon.svg";
-window.country = "CN";
-window.city = "厦门";
-window.showPrice = false;
-window.dashboardUrl = "https://xdp.basebit.me/get_started/119";
-window.XDPFederalApi = "http://fednoded.hkstp.dev.curisinsight.com/v1";
-window.DaaSFederalApi = "http://fednoded-daas.hkstp.dev.curisinsight.com/v1";
-window.federalID = "c1ce663b-3d5d-4df5-8b22-f8e2d5e726be";
-window.TEEID = "a92c5270-204a-4948-a148-3483cad2d3a2";
-window.FedAppApi = "http://fedappd.hkstp.dev.curisinsight.com/v1";
-window.fedAppId = "821f74c7-aefa-429a-9477-addae63fc787";
-window.showBlockchainTab = false;
-window.blockchainApi = "http://casblockchain.hkstp.dev.curisinsight.com/v3";
-window.loginLogo = "https://cdn.basebit.me/xdp/login_logo.svg?1";
-window.loginTitle = "login.title";
-window.loginSubTitle = "login.title.small";
-window.background = "/images/loginBG.png";
-window.footerColumns = [
+globalThis.regionName = "cn-northwest-1";
+globalThis.enableTwoStepVerification = true;
+globalThis.convertChinese = false;
+globalThis.linkTool = "https://cms-fe-xdp-v3-aws.basebit.me/get_started/87";
+globalThis.downloadDataset = false;
+globalThis.documentTitle = "STP Platform";
+globalThis.logo = "https://cdn.basebit.me/xdp/xdp_logo.svg?1";
+globalThis.favicon = "/icons/favicon.svg";
+globalThis.country = "CN";
+globalThis.city = "厦门";
+globalThis.showPrice = false;
+globalThis.dashboardUrl = "https://xdp.basebit.me/get_started/119";
+globalThis.XDPFederalApi = "http://fednoded.hkstp.dev.curisinsight.com/v1";
+globalThis.DaaSFederalApi =
+  "http://fednoded-daas.hkstp.dev.curisinsight.com/v1";
+globalThis.federalID = "c1ce663b-3d5d-4df5-8b22-f8e2d5e726be";
+globalThis.TEEID = "a92c5270-204a-4948-a148-3483cad2d3a2";
+globalThis.FedAppApi = "http://fedappd.hkstp.dev.curisinsight.com/v1";
+globalThis.fedAppId = "821f74c7-aefa-429a-9477-addae63fc787";
+globalThis.showBlockchainTab = false;
+globalThis.blockchainApi = "http://casblockchain.hkstp.dev.curisinsight.com/v3";
+globalThis.loginLogo = "https://cdn.basebit.me/xdp/login_logo.svg?1";
+globalThis.loginTitle = "login.title";
+globalThis.loginSubTitle = "login.title.small";
+globalThis.background = "/images/loginBG.png";
+globalThis.footerColumns = [
   {
     rows: [
       {
@@ -86,11 +90,11 @@ window.footerColumns = [
     style: {},
   },
 ];
-window.footerContainerStyle = {};
-window.CompetitionAPi = "http://competition.v3.hkha.curisinsight.com/v1";
-window.enableFederationButton = true;
-window.disableRegister = false;
-window.powers = {
+globalThis.footerContainerStyle = {};
+globalThis.CompetitionAPi = "http://competition.v3.hkha.curisinsight.com/v1";
+globalThis.enableFederationButton = true;
+globalThis.disableRegister = false;
+globalThis.powers = {
   user: {
     allowList: [
       "email",
@@ -260,23 +264,23 @@ window.powers = {
     },
   },
 };
-window.redirectBlockList = ["fednodes"];
-window.redirectBlockRouterList = [
+globalThis.redirectBlockList = ["fednodes"];
+globalThis.redirectBlockRouterList = [
   "/dataService/dataSource",
   "/dataService/datasets/",
   "/my/datasets/",
   "/projects/:id/data",
 ];
-window.defaultLanguage = "en-US";
-window.theme = "/css/theme.less";
-window.catalogType = ["Clinical"]; // 参数： Bio（生信），Clinical（医疗）
-window.sandBox = "1f24e3c3-b07a-41d0-890c-db7129145c41";
-window.enableGraphClick = false;
-window.showMetadata = true;
-window.XTableApi = "http://xtable.hkstp.dev.curisinsight.com/v1";
-window.showUsageReport = false;
-window.displayKeywordsToStar = false;
-window.CatalogStarKeywords = [
+globalThis.defaultLanguage = "en-US";
+globalThis.theme = "/css/theme.less";
+globalThis.catalogType = ["Clinical"]; // 参数： Bio（生信），Clinical（医疗）
+globalThis.sandBox = "1f24e3c3-b07a-41d0-890c-db7129145c41";
+globalThis.enableGraphClick = false;
+globalThis.showMetadata = true;
+globalThis.XTableApi = "http://xtable.hkstp.dev.curisinsight.com/v1";
+globalThis.showUsageReport = false;
+globalThis.displayKeywordsToStar = false;
+globalThis.CatalogStarKeywords = [
   "厦门市中医院",
   "厦门市海沧医院",
   "厦门市第三医院",
@@ -297,8 +301,9 @@ window.CatalogStarKeywords = [
   "第一医院思明分院",
   "厦门市口腔医院",
 ];
-window.PipelineApi = "http://pipeline-api.hkstp.dev.curisinsight.com/api/v2";
-window.showPoints = true;
+globalThis.PipelineApi =
+  "http://pipeline-api.hkstp.dev.curisinsight.com/api/v2";
+globalThis.showPoints = true;
 
 // 测试使用
-window.mockApi = "/mock";
+globalThis.mockApi = "/mock";

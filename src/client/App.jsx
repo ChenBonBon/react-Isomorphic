@@ -26,7 +26,7 @@ const App = ({ preloadedState, cookie }) => {
 
   const changeLang = (value) => {
     Cookies.set("language", value);
-    window.location.reload();
+    global.window.location.reload();
   };
 
   return (
@@ -39,7 +39,9 @@ const App = ({ preloadedState, cookie }) => {
         ))}
       </ul>
       <Select
-        defaultValue={getLanguageFromCookie() || Cookies.get("language") || "en_US"}
+        defaultValue={
+          getLanguageFromCookie() || Cookies.get("language") || "en_US"
+        }
         dropdownMatchSelectWidth={false}
         style={{ position: "fixed", top: 0, right: "50%" }}
         onChange={changeLang}

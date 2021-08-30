@@ -15,9 +15,13 @@ export const user = {
   },
   effects: (dispatch) => ({
     async fetchUser() {
-      const res = await Get(`/mock/fetchUser`);
-      const { name, age } = res;
-      dispatch.user.SET_USER({ name, age });
+      try {
+        const res = await Get(`${globalThis.mockApi}/fetchUser`);
+        const { name, age } = res;
+        dispatch.user.SET_USER({ name, age });
+      } catch (error) {
+        console.error(error);
+      }
     },
     async updateUser({ payload }) {
       await new Promise((resolve, reject) => setTimeout(resolve, 1000));
