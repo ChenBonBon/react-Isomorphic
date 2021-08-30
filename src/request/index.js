@@ -2,6 +2,7 @@ import Axios from "axios";
 
 const request = Axios.create({
   timeout: 60000,
+  withCredentials: true,
 });
 
 const {

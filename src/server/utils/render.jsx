@@ -1,8 +1,12 @@
 import App from "@client/App";
 import { ChunkExtractor, ChunkExtractorManager } from "@loadable/server";
 import { renderToString } from "react-dom/server";
+import { IntlProvider } from "react-intl";
 import { Provider } from "react-redux";
 import { StaticRouter as Router } from "react-router-dom";
+import en_US from "../../locales/en-US.json";
+import zh_CN from "../../locales/zh-CN.json";
+import zh_HK from "../../locales/zh-HK.json";
 import routes from "../../routes";
 import { createStore } from "../../store";
 
@@ -18,6 +22,41 @@ const extractor = new ChunkExtractor({ statsFile });
 
 const render = (request) => {
   const store = createStore();
+  const { cookie } = request.header;
+
+  const getLanguageFromCookie = () => {
+    let language = null;
+    if (cookie) {
+      const cookieKeyValues = cookie.split(";");
+      cookieKeyValues.forEach((item) => {
+        const [key, value] = item.trim().split("=");
+        if (key === "language") {
+          language = value;
+        }
+      });
+    }
+
+    return language;
+  };
+
+  const getMessage = () => {
+    const language = getLanguageFromCookie() || "en_US";
+    let message = en_US;
+    switch (language) {
+      case "zh_CN":
+        message = zh_CN;
+        break;
+      case "zh_HK":
+        message = zh_HK;
+        break;
+      default:
+        message = en_US;
+        break;
+    }
+
+    return message;
+  };
+
   return new Promise((resolve, reject) => {
     let promises;
     // 匹配路由
@@ -26,7 +65,12 @@ const render = (request) => {
       const asyncData = route.asyncData;
       // match.params获取匹配的路由参数
       return asyncData
-        ? asyncData(store, Object.assign(match.params, request.query))
+        ? asyncData(
+            store,
+            Object.assign(match.params, request.query, {
+              cookie,
+            })
+          )
         : Promise.resolve(null);
     });
 
@@ -76,14 +120,18 @@ const render = (request) => {
     };
 
     const generateSSR = (request) => {
+      const { cookie } = request.header;
+
       const preloadedState = store.getState();
       const html = renderToString(
         <ChunkExtractorManager extractor={extractor}>
-          <Provider store={store}>
-            <Router location={request.url}>
-              <App preloadedState={preloadedState} />
-            </Router>
-          </Provider>
+          <IntlProvider messages={getMessage()} locale="en" defaultLocale="en">
+            <Provider store={store}>
+              <Router location={request.url}>
+                <App preloadedState={preloadedState} cookie={cookie} />
+              </Router>
+            </Provider>
+          </IntlProvider>
         </ChunkExtractorManager>
       );
 

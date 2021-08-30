@@ -1,0 +1,1108 @@
+name:
+  zh-HK: 名稱
+  en-US: Name
+  zh-CN: 名称
+age:
+  zh-HK: 年齡
+  en-US: Age
+  zh-CN: 年龄
+current.name:
+  zh-HK: 當前名稱
+  en-US: Current Name
+  zh-CN: 当前名称
+current.age:
+  zh-HK: 當前年齡
+  en-US: Current Age
+  zh-CN: 当前年龄
+common.state.not.deprecated:
+  zh-HK: 非棄用
+  en-US: Unabandoned
+  zh-CN: 非弃用
+common.state.start.up:
+  zh-HK: 啓動
+  en-US: Run
+  zh-CN: 启动
+common.state.not.start:
+  zh-HK: 未啓用
+  en-US: Deactive
+  zh-CN: 未启用
+common.state.draft:
+  zh-HK: 草稿
+  en-US: Draft
+  zh-CN: 草稿
+common.state.active:
+  zh-HK: 啓用
+  en-US: Active
+  zh-CN: 启用
+common.state.deactive:
+  zh-HK: 停用
+  en-US: Deactive
+  zh-CN: 停用
+common.state.deprecated:
+  zh-HK: 棄用
+  en-US: Abandoned
+  zh-CN: 弃用
+common.state.waiting:
+  zh-HK: 等待
+  en-US: Waiting
+  zh-CN: 等待
+common.state.executing:
+  zh-HK: 執行中
+  en-US: Excuting
+  zh-CN: 执行中
+common.state.success:
+  zh-HK: 成功
+  en-US: Success
+  zh-CN: 成功
+common.state.completed:
+  zh-HK: 完成
+  en-US: Completed
+  zh-CN: 完成
+common.state.published:
+  zh-HK: 完成
+  en-US: Published
+  zh-CN: 完成
+common.state.pending:
+  zh-HK: 待審核
+  en-US: Pending
+  zh-CN: 待审核
+common.state.mapped:
+  zh-HK: 已映射
+  en-US: Mapped
+  zh-CN: 已映射
+common.state.unmapped:
+  zh-HK: 未映射
+  en-US: Unmapped
+  zh-CN: 未映射
+common.state.approved:
+  zh-HK: 審核通過
+  en-US: Approved
+  zh-CN: 审核通过
+common.state.rejected:
+  zh-HK: 退回
+  en-US: Rejected
+  zh-CN: 退回
+common.state.submitted:
+  zh-HK: 已提交
+  en-US: Submitted
+  zh-CN: 已提交
+common.state.disapproved:
+  zh-HK: 審核拒絕
+  en-US: Rejected
+  zh-CN: 审核拒绝
+common.state.disabled:
+  zh-HK: 已禁用
+  en-US: Disabled
+  zh-CN: 已禁用
+common.data.type.decimal:
+  zh-HK: 小數點
+  en-US: Decimal
+  zh-CN: 小数点
+common.data.type.string:
+  zh-HK: 字符串
+  en-US: String
+  zh-CN: 字符串
+common.data.type.integer:
+  zh-HK: 整型
+  en-US: Integer
+  zh-CN: 整型
+common.data.type.float:
+  zh-HK: 浮點型
+  en-US: Float
+  zh-CN: 浮点型
+common.data.type.datetime:
+  zh-HK: 日期
+  en-US: Datetime
+  zh-CN: 日期
+common.data.type.date:
+  zh-HK: 日期
+  en-US: Date
+  zh-CN: 日期
+common.data.type.boolean:
+  zh-HK: 布爾型
+  en-US: Boolean
+  zh-CN: 布尔型
+common.copyright:
+  zh-HK: "Copyright {icon} {value}"
+  en-US: "Copyright {icon} {value}"
+  zh-CN: "Copyright {icon} {value}"
+terms.condition.translate:
+  en-US: Terms and Conditions
+  zh-HK: 條款和用戶協議
+  zh-CN: 条款和用户协议
+home:
+  en-US: Home
+  zh-HK: 主頁
+  zh-CN: 主页
+dataset:
+  en-US: Dataset
+  zh-HK: 數據集
+  zh-CN: 数据集
+datasets:
+  en-US: Datasets
+  zh-HK: 數據集
+  zh-CN: 数据集
+account:
+  en-US: Account
+  zh-HK: 帳戶
+  zh-CN: 帐户
+project:
+  en-US: Project
+  zh-HK: 項目
+  zh-CN: 项目
+projects:
+  en-US: Projects
+  zh-HK: 項目
+  zh-CN: 项目
+user.home.nocompany:
+  en-US: No company yet
+  zh-HK: 還沒有公司
+  zh-CN: 还没有公司
+user.home.nocompany.title:
+  en-US: No company yet?
+  zh-HK: 還沒有公司？
+  zh-CN: 还没有公司？
+user.home.nocompany.title2:
+  en-US: Register your company right now
+  zh-HK: 立即註冊您的公司
+  zh-CN: 立即注册您的公司
+user.home.nocompany.letusgo:
+  en-US: Let's go
+  zh-HK: 出發
+  zh-CN: 出发
+company:
+  en-US: Company
+  zh-HK: 公司
+  zh-CN: 公司
+company.name:
+  en-US: Company Name
+  zh-HK: 公司名稱
+  zh-CN: 公司名称
+company.registertion:
+  en-US: Company Registertion
+  zh-HK: 公司註冊
+  zh-CN: 公司注册
+description:
+  en-US: Description
+  zh-HK: 描述
+  zh-CN: 描述
+address:
+  en-US: Address
+  zh-HK: 地址
+  zh-CN: 地址
+input.value.nil:
+  en-US: Nothing entered
+  zh-HK: 未輸入內容
+  zh-CN: 未输入内容
+input.limit:
+  en-US: Maximum of {limit} words
+  zh-HK: 限制 {limit} 個字符
+  zh-CN: 限制 {limit} 个字符
+input.limit.normal:
+  en-US: Maximum of 50 words
+  zh-HK: 限制 50 個字符
+  zh-CN: 限制 50 个字符
+input.limit.number:
+  en-US: Can only be numbers
+  zh-HK: 只能是數字
+  zh-CN: 只能是数字
+contact.name:
+  en-US: Contact name
+  zh-HK: 聯繫人姓名
+  zh-CN: 联系人姓名
+contact.phone:
+  en-US: Contact phone
+  zh-HK: 聯繫電話
+  zh-CN: 联系电话
+phone:
+  en-US: Phone
+  zh-HK: 電話
+  zh-CN: 电话
+contact.email:
+  en-US: Contact email
+  zh-HK: 聯繫電子郵件
+  zh-CN: 联系电子邮件
+submit:
+  en-US: Submit
+  zh-HK: 提交
+  zh-CN: 提交
+back:
+  en-US: Back
+  zh-HK: 返回
+  zh-CN: 返回
+logo:
+  en-US: Logo
+  zh-HK: 商標
+  zh-CN: 商标
+banner:
+  en-US: Banner
+  zh-HK: 橫幅
+  zh-CN: 横幅
+tags:
+  en-US: Tags
+  zh-HK: 標籤
+  zh-CN: 标签
+next.version:
+  en-US: Next Version!
+  zh-HK: 下个版本见！
+  zh-CN: 下个版本见！
+access.denied:
+  en-US: Access denied
+  zh-HK: 無權訪問
+  zh-CN: 无权访问
+upload.image:
+  en-US: Upload image
+  zh-HK: 上傳圖片
+  zh-CN: 上传图片
+upload.image2:
+  en-US: (min. 400x400)
+  zh-HK: (最小 400x400)
+  zh-CN: (最小 400x400)
+upload.limit.issue:
+  zh-HK: 上傳的圖片大小不能超過 {limit}k
+  en-US: Upload image size cannot be more than {limit}k
+  zh-CN: 上传的图片大小不能超过 {limit}k
+login.title:
+  zh-CN: 请输入您的电子邮件地址
+  zh-HK: 請輸入您的電子郵件地址
+  en-US: "Please enter youe email address"
+error.email:
+  zh-CN: 错误的邮箱格式
+  zh-HK: 錯誤的郵箱格式
+  en-US: Incorrect mailbox format
+email:
+  zh-CN: 邮箱
+  zh-HK: 郵箱
+  en-US: Email
+app:
+  zh-CN: 应用
+  zh-HK: 應用
+  en-US: App
+apps:
+  zh-CN: 应用
+  zh-HK: 應用
+  en-US: Apps
+product.list:
+  zh-CN: 产品列表
+  zh-HK: 產品列表
+  en-US: Product list
+submit.success:
+  zh-CN: 提交成功
+  zh-HK: 提交成功
+  en-US: Submitted successfully
+dashboard:
+  zh-CN: 仪表板
+  zh-HK: 儀表板
+  en-US: Dashboard
+profile:
+  zh-CN: 资料
+  zh-HK: 資料
+  en-US: Profile
+cancel:
+  zh-CN: 取消
+  zh-HK: 取消
+  en-US: Cancel
+reapply:
+  zh-CN: 重新申请
+  zh-HK: 重新申請
+  en-US: Reapply
+edit:
+  zh-CN: 编辑
+  zh-HK: 編輯
+  en-US: Edit
+member:
+  zh-CN: 成员
+  zh-HK: 成員
+  en-US: Member
+user.sign:
+  zh-CN: 用户登录
+  zh-HK: 用戶登錄
+  en-US: User sign in
+staff.sign:
+  zh-CN: 工作人员登录
+  zh-HK: 工作人員登錄
+  en-US: Staff sign in
+notification:
+  zh-CN: 通知
+  zh-HK: 通知
+  en-US: Notification
+common.error:
+  zh-CN: 发生错误，请稍后重试
+  zh-HK: 發生錯誤，請稍後重試
+  en-US: An error occurred, please try again later
+joined.days:
+  zh-CN: "{day} 天前加入"
+  zh-HK: "{day} 天前加入"
+  en-US: Joined {day} days ago
+invite:
+  zh-CN: "邀请"
+  zh-HK: "邀請"
+  en-US: Invite
+total:
+  zh-CN: "总共"
+  zh-HK: "總共"
+  en-US: Total
+display.name:
+  zh-CN: 名称
+  zh-HK: 名稱
+  en-US: Name
+role:
+  zh-CN: "角色"
+  zh-HK: "角色"
+  en-US: Role
+status:
+  zh-CN: "状态"
+  zh-HK: "狀態"
+  en-US: Status
+actions:
+  zh-CN: "操作"
+  zh-HK: "操作"
+  en-US: Actions
+joined:
+  zh-CN: "已加入"
+  zh-HK: "已加入"
+  en-US: Joined
+view:
+  zh-CN: "查看"
+  zh-HK: "查看"
+  en-US: View
+system.admin:
+  zh-CN: 系统管理员
+  zh-HK: 系統管理員
+  en-US: System Admin
+detail:
+  zh-CN: 详情
+  zh-HK: 詳情
+  en-US: Detail
+action:
+  zh-CN: 操作
+  zh-HK: 操作
+  en-US: Action
+reject.reason:
+  zh-CN: 拒绝理由
+  zh-HK: 拒絕理由
+  en-US: Reject reason
+preference:
+  zh-CN: 个人设置
+  zh-HK: 個人設置
+  en-US: Preference
+save:
+  zh-CN: 保存
+  zh-HK: 保存
+  en-US: Save
+language:
+  zh-CN: 语言
+  zh-HK: 語言
+  en-US: Language
+timezone:
+  zh-CN: 时区
+  zh-HK: 時區
+  en-US: Time-zone
+showtutorial:
+  zh-CN: 显示教程
+  zh-HK: 顯示教程
+  en-US: Show tutorial
+yes:
+  zh-CN: 是
+  zh-HK: 是
+  en-US: Yes
+no:
+  zh-CN: 否
+  zh-HK: 否
+  en-US: No
+signout:
+  zh-CN: 登出
+  zh-HK: 登出
+  en-US: Sign out
+login.config.error:
+  zh-CN: 登录配置错误
+  zh-HK: 登錄配置錯誤
+  en-US: Login configuration error
+owner:
+  zh-CN: 所有者
+  zh-HK: 所有者
+  en-US: Owner
+company.editor:
+  zh-CN: 公司管理员
+  zh-HK: 公司管理員
+  en-US: Company editor
+please.select:
+  zh-CN: 请选择
+  zh-HK: 請選擇
+  en-US: Please select
+please.select.role:
+  zh-CN: 请选择角色
+  zh-HK: 請選擇角色
+  en-US: Please select role
+project.admin:
+  zh-CN: 项目管理员
+  zh-HK: 項目管理員
+  en-US: Project admin
+project.viewer:
+  zh-CN: 项目查看器
+  zh-HK: 項目查看器
+  en-US: Project viewer
+data.provider:
+  zh-CN: 数据提供者
+  zh-HK: 數據提供者
+  en-US: Data provider
+app.provider:
+  zh-CN: 应用程序提供商
+  zh-HK: 應用程序提供商
+  en-US: App provider
+please.input.your.email:
+  zh-CN: 请输入你的邮箱
+  zh-HK: 請輸入你的郵箱
+  en-US: please input your email
+pleas.choose.a.member.as.company.owner:
+  zh-CN: 请选择一名成员作为公司所有者
+  zh-HK: 請選擇一名成員作為公司所有者
+  en-US: Pleas choose a member as company owner
+swap.role:
+  zh-CN: 交换角色
+  zh-HK: 交換角色
+  en-US: Swap Role
+company.memberinvition:
+  zh-CN: 成员邀请
+  zh-HK: 成員邀請
+  en-US: Member Invition
+product.name:
+  zh-CN: 产品名称
+  zh-HK: 產品名稱
+  en-US: Product name
+product.image:
+  zh-CN: 产品图片
+  zh-HK: 產品圖片
+  en-US: Product image
+company.list:
+  zh-CN: 公司列表
+  zh-HK: 公司列表
+  en-US: Company list
+review.list:
+  zh-CN: 审核列表
+  zh-HK: 審核列表
+  en-US: Review list
+company.owner:
+  zh-CN: 公司负责人
+  zh-HK: 公司負責人
+  en-US: Company owner
+applied.date:
+  zh-CN: 申请时间
+  zh-HK: 申請時間
+  en-US: Applied date
+audit.date:
+  zh-CN: 审核时间
+  zh-HK: 審核時間
+  en-US: Audit date
+users:
+  zh-CN: 用户
+  zh-HK: 用戶
+  en-US: Users
+audit:
+  zh-CN: 审核
+  zh-HK: 審核
+  en-US: Audit
+common.state.all:
+  zh-CN: 全部
+  zh-HK: 全部
+  en-US: All
+common.approve:
+  zh-HK: 審核通過
+  en-US: Approve
+  zh-CN: 审核通过
+common.reject:
+  zh-HK: 退回
+  en-US: Reject
+  zh-CN: 退回
+audit.required:
+  zh-CN: 审核结果不能为空
+  zh-HK: 審核結果不能為空
+  en-US: Audit result is required
+reject.reason.required:
+  zh-CN: 拒绝理由不能为空
+  zh-HK: 拒絕理由不能為空
+  en-US: Reject reason is required
+no.members:
+  zh-CN: 暂无成员
+  zh-HK: 暫無成員
+  en-US: No members
+company.viewer:
+  zh-CN: 公司成员
+  zh-HK: 公司成員
+  en-US: Company viewer
+user.edit.profile:
+  zh-CN: 编辑资料
+  zh-HK: 編輯資料
+  en-US: Edit Profile
+avatar:
+  zh-CN: 头像
+  zh-HK: 頭像
+  en-US: Avatar
+user.update.onepass:
+  zh-CN: 请在 Onepass 上更新信息
+  zh-HK: 請在 Onepass 上更新信息
+  en-US: Update on OnePass
+user.referring.user:
+  zh-CN: 推荐用户
+  zh-HK: 推薦用戶
+  en-US: Referring user
+user.participated.projects:
+  zh-CN: 参与项目
+  zh-HK: 參與項目
+  en-US: Participated projects
+user.external.profile:
+  zh-CN: 外部配置文件
+  zh-HK: 外部配置文件
+  en-US: External profile
+admin.company.input.placeholder:
+  zh-CN: 按公司名称搜索
+  zh-HK: 按公司名稱搜索
+  en-US: Search by company name
+error.org.already.exists:
+  zh-CN: 组织机构已注册过
+  zh-HK: 組織機構已註冊過
+  en-US: The organization has been registered
+inviter:
+  zh-CN: 邀请者
+  zh-HK: 邀請者
+  en-US: Inviter
+yourRole:
+  zh-CN: 你的角色
+  zh-HK: 你的角色
+  en-US: Your role
+company.role:
+  zh-CN: 公司角色
+  zh-HK: 公司角色
+  en-US: Company role
+user.name:
+  zh-CN: 用户名
+  zh-HK: 用戶名
+  en-US: User name
+viewer:
+  zh-CN: 成员
+  zh-HK: 成員
+  en-US: Viewer
+editor:
+  zh-CN: 管理员
+  zh-HK: 管理員
+  en-US: Editor
+table.company.name:
+  en-US: Company name
+  zh-HK: 公司名稱
+  zh-CN: 公司名称
+community:
+  en-US: Community
+  zh-HK: 社區
+  zh-CN: 社区
+workspace:
+  en-US: Workspace
+  zh-HK: 工作空間
+  zh-CN: 工作空间
+company.showcases:
+  en-US: Company Showcases
+  zh-HK: 公司展示
+  zh-CN: 公司展示
+project.showcases:
+  en-US: Project Showcases
+  zh-HK: 項目展示
+  zh-CN: 项目展示
+data.marketplace:
+  en-US: Data Marketplace
+  zh-HK: 數據廣場
+  zh-CN: 数据广场
+app.marketplace:
+  en-US: App Marketplace
+  zh-HK: 應用廣場
+  zh-CN: 应用广场
+myProjects:
+  en-US: My Projects
+  zh-HK: 我的項目
+  zh-CN: 我的项目
+myDatasets:
+  en-US: My Datasets
+  zh-HK: 我的數據
+  zh-CN: 我的数据
+myApps:
+  en-US: My Apps
+  zh-HK: 我的應用
+  zh-CN: 我的应用
+projects.detail:
+  en-US: Project details
+  zh-HK: 項目詳情
+  zh-CN: 项目详情
+settings:
+  en-US: Settings
+  zh-HK: 設置
+  zh-CN: 设置
+overview:
+  en-US: Overview
+  zh-HK: 概要
+  zh-CN: 概要
+metadata:
+  en-US: Metadata
+  zh-HK: 元数据
+  zh-CN: 元数据
+workflows:
+  en-US: Workflows
+  zh-HK: 工作流
+  zh-CN: 工作流
+instances:
+  en-US: Instances
+  zh-HK: 應用
+  zh-CN: 应用
+participants:
+  en-US: Participants
+  zh-HK: 參與者
+  zh-CN: 参与者
+container.registry:
+  en-US: Container registry
+  zh-HK: 容齊註冊表
+  zh-CN: 容器注册表
+dataset.detail:
+  en-US: Dataset details
+  zh-HK: 數據集詳情
+  zh-CN: 数据集详情
+data:
+  en-US: Data
+  zh-HK: 數據
+  zh-CN: 数据
+project.name:
+  en-US: Project Name
+  zh-HK: 項目名稱
+  zh-CN: 项目名称
+brief.description:
+  en-US: Brief description
+  zh-HK: 概述
+  zh-CN: 概述
+max.storage:
+  en-US: Max storage (GB)
+  zh-HK: 最大存儲（GB）
+  zh-CN: 最大存储（GB）
+max.storage.per.provider:
+  en-US: Max storage (GB) / Data provider
+  zh-HK: 最大存儲（GB）/ 數據提供者
+  zh-CN: 最大存储（GB）/ 数据提供者
+max.budget:
+  en-US: Max budget
+  zh-HK: 最大預算
+  zh-CN: 最大预算
+input.limit.storage:
+  en-US: Maximum 99999 GB, Integer only
+  zh-HK: 最大99999 GB,只能是正整數
+  zh-CN: 最大99999 GB,只能是正整数
+limit.budget:
+  en-US: Maximum budget, number only
+  zh-HK: 最大預算,只能是數字
+  zh-CN: 最大预算,只能是数字
+private:
+  en-US: Private
+  zh-HK: 私有
+  zh-CN: 私有
+public:
+  en-US: Public
+  zh-HK: 公開
+  zh-CN: 公开
+upload.image3:
+  en-US: (1900*400)，max 1MB
+  zh-HK: (1900x400)，最大1MB
+  zh-CN: (1900x400)，最大1MB
+basic.settings:
+  en-US: Basic Settings
+  zh-HK: 基本設置
+  zh-CN: 基本设置
+search.input:
+  en-US: Search
+  zh-HK: 搜索
+  zh-CN: 搜索
+no.data:
+  en-US: No Data
+  zh-HK: 暫無數據
+  zh-CN: 暂无数据
+size:
+  en-US: Size
+  zh-HK: 大小
+  zh-CN: 大小
+create.dataset:
+  en-US: Create Dataset
+  zh-HK: 創建數據集
+  zh-CN: 创建数据集
+mount.dataset:
+  en-US: Attach Dataset
+  zh-HK: 附加數據集
+  zh-CN: 附加数据集
+add.apps:
+  en-US: Add Apps
+  zh-HK: 添加應用
+  zh-CN: 添加应用
+type:
+  en-US: Type
+  zh-HK: 類型
+  zh-CN: 类型
+update.time:
+  en-US: Update time
+  zh-HK: 更新時間
+  zh-CN: 更新时间
+mount.disk:
+  zh-HK: 掛載盤
+  en-US: Mount disk
+  zh-CN: 挂载盘
+cache.file:
+  zh-HK: 緩存文件
+  en-US: Cache File
+  zh-CN: 缓存文件
+executor:
+  zh-HK: 執行人員
+  en-US: Executor
+  zh-CN: 执行人员
+workflow.app:
+  zh-HK: 工作流/應用
+  en-US: Workflows/Apps
+  zh-CN: 工作流/应用
+created.at:
+  en-US: Created at
+  zh-HK: 創建於
+  zh-CN: 创建于
+create.project:
+  en-US: Host a Project
+  zh-HK: 創建項目
+  zh-CN: 创建项目
+privacy:
+  en-US: Privacy
+  zh-HK: 隱私
+  zh-CN: 隐私
+visibility:
+  en-US: Visibility
+  zh-HK: 可見性
+  zh-CN: 可见性
+input.limit.budget:
+  en-US: Project budget
+  zh-HK: 項目預算
+  zh-CN: 项目预算
+dataset.name:
+  en-US: Dataset Name
+  zh-HK: 數據集名
+  zh-CN: 数据集名
+dataset.nonPreviewable:
+  en-US: This Dataset is Non-Previewable
+  zh-HK: 此數據集不可預覽
+  zh-CN: 此数据集不可预览
+file.no.preview:
+  en-US: Sorry, the file is temporarily unavailable for preview!
+  zh-HK: 抱歉，該文件暫時無法預覽！
+  zh-CN: 抱歉，该文件暂时无法预览！
+auto:
+  en-US: Auto
+  zh-HK: 自動
+  zh-CN: 自动
+manual:
+  en-US: Manual
+  zh-HK: 手動
+  zh-CN: 手动
+pending:
+  en-US: Pending
+  zh-HK: 等待中
+  zh-CN: 等待中
+pipeline:
+  en-US: Pipeline
+  zh-HK: 配置中
+  zh-CN: 配置中
+ongoing:
+  en-US: Ongoing
+  zh-HK: 進行中
+  zh-CN: 进行中
+completed:
+  en-US: Completed
+  zh-HK: 已完成
+  zh-CN: 已完成
+dropped:
+  en-US: Dropped
+  zh-HK: 已刪除
+  zh-CN: 已删除
+search.project:
+  en-US: Search project name
+  zh-HK: 搜索項目名稱
+  zh-CN: 搜索项目名称
+invite.participants:
+  en-US: Invite Participants
+  zh-HK: 邀請參與者
+  zh-CN: 邀请参与者
+project.owner:
+  en-US: Project Owner
+  zh-HK: 項目擁有者
+  zh-CN: 项目拥有者
+invited:
+  en-US: Invited
+  zh-HK: 受邀
+  zh-CN: 受邀
+delete:
+  en-US: Delete
+  zh-HK: 刪除
+  zh-CN: 删除
+please.enter.the.participant's.email:
+  en-US: Please enter the participant's email
+  zh-HK: 請輸入參與者的電子郵件
+  zh-CN: 请输入参与者的电子邮件
+the.participant.is.not.a.user.of.the.platform:
+  en-US: The participant is not a user of the platform, we will send the participant an invitation to register
+  zh-HK: 參與者不是平台用戶，我們將向參與者發送註冊邀請
+  zh-CN: 参与者不是平台用户，我们将向参与者发送注册邀请
+loading.more:
+  zh-HK: 加載更多...
+  en-US: Loading more...
+  zh-CN: 加载更多...
+your.project:
+  zh-HK: 你的項目
+  en-US: Your Work
+  zh-CN: 你的项目
+download:
+  zh-HK: 下載
+  en-US: Download
+  zh-CN: 下载
+download.link:
+  zh-HK: 下載鏈接
+  en-US: Download Link
+  zh-CN: 下载链接
+download.note:
+  zh-HK: 下載提示
+  en-US: Download Notes
+  zh-CN: 下载提示
+generate.download.link:
+  zh-HK: 生成压缩包下載鏈接
+  en-US: Generate zip file link
+  zh-CN: 生成压缩包下载链接
+generate.resume.breakpoint.download.link:
+  zh-HK: 生成斷點續傳載鏈接
+  en-US: Generate resume breakpoint download link
+  zh-CN: 生成断点续传下载链接
+download.tool:
+  zh-HK: 如何使用下載鏈接
+  en-US: How to use download link
+  zh-CN: 如何使用下载链接
+link.error:
+  zh-HK: 該數據不支持下載，因為數據血緣中存在其他數據集所有者
+  en-US: There are other dataset owner in the dataset lineage, The data does not support downloading
+  zh-CN: 该数据不支持下载，因为数据血缘中存在其他数据集所有者
+link.message:
+  zh-HK: 下載鏈接的時效為
+  en-US: The download link(s) will expire in
+  zh-CN: 下载链接的时效为
+link.message.combine:
+  zh-HK: 過期後請重新生成
+  en-US: Please generate again after expiration
+  zh-CN: 过期后请重新生成
+valid.period:
+  zh-HK: 有效期
+  en-US: Valid period
+  zh-CN: 有效期
+day:
+  zh-HK: 天
+  en-US: day(s)
+  zh-CN: 天
+dataset.no.belong.to.org:
+  zh-HK: 下載失敗，您不是該數據集的所有者。
+  en-US: Download failed, you are not the owner of the dataset.
+  zh-CN: 下载失败，您不是该数据集的所有者。
+download.permission.denied:
+  zh-HK: 下載失敗，您沒有該數據集的授權。
+  en-US: Download failed, you are not authorized for this dataset.
+  zh-CN: 下载失败，您没有该数据集的授权。
+other.dataset.owner.in.lineage:
+  zh-HK: 下載失敗，因為數據血緣中存在其他數據集所有者。
+  en-US: Download failed, there are other dataset owners in the data lineage.
+  zh-CN: 下载失败，因为数据血缘中存在其他数据集所有者。
+generate.success:
+  zh-HK: 生成成功
+  en-US: Generate success
+  zh-CN: 生成成功
+generate.failed:
+  zh-HK: 生成失敗
+  en-US: Generate failed
+  zh-CN: 生成失败
+download.check.files:
+  zh-HK: 請選擇要下載的文件
+  en-US: Please select the file to download
+  zh-CN: 请选择要下载的文件
+version:
+  zh-HK: 版本
+  en-US: Version
+  zh-CN: 版本
+join.project:
+  zh-HK: 加入項目
+  en-US: Join Project
+  zh-CN: 加入项目
+dataset.setting.general:
+  zh-HK: 通用設置
+  en-US: General
+  zh-CN: 通用设置
+dataset.setting.sharing:
+  zh-HK: 共享設置
+  en-US: Sharing
+  zh-CN: 共享设置
+authority:
+  zh-HK: 權限
+  en-US: Authority
+  zh-CN: 权限
+dataset.id:
+  zh-HK: 數據集ID
+  en-US: Dataset ID
+  zh-CN: 数据集ID
+main.project:
+  zh-HK: 主項目
+  en-US: Main project
+  zh-CN: 主项目
+main.project.id:
+  zh-HK: 主項目ID
+  en-US: Main project ID
+  zh-CN: 主项目ID
+owner.user:
+  zh-HK: 所有者
+  en-US: Owner user
+  zh-CN: 所有者
+owner.user.id:
+  zh-HK: 所有者ID
+  en-US: Owner user ID
+  zh-CN: 所有者ID
+make.public:
+  zh-HK: 公開數據集
+  en-US: Make Public
+  zh-CN: 公开数据集
+attached.project:
+  zh-HK: 授權項目
+  en-US: Attached Project
+  zh-CN: 授权项目
+dataset.setting.can.not.save.tip:
+  zh-HK: 點擊上方按鈕前你的修改將不會被保存
+  en-US: Your modifications are not saved yet until using the button above
+  zh-CN: 点击上方按钮前你的修改将不会被保存
+publish.dataset:
+  zh-HK: 發布數據集
+  en-US: Publish Dataset
+  zh-CN: 发布数据集
+publish.dataset.modal.title:
+  zh-HK: 確定要公開數據集？
+  en-US: Ready To Go Public?
+  zh-CN: 确定要公开数据集？
+publish.dataset.modal.content:
+  zh-HK: 公開數據集可以被所有的AIR機構使用。公開數據集無法改回私有，但是可以被刪除。
+  en-US: Public datasets enjoy the engagement from the entire AIR community. They cannot be changed back to private, but may be deleted.
+  zh-CN: 公开数据集可以被所有的AIR机构使用。公开数据集无法改回私有，但是可以被删除。
+attached.by:
+  zh-HK: 授權人
+  en-US: Attached By
+  zh-CN: 授权人
+authorization:
+  zh-HK: 權限
+  en-US: Authorization
+  zh-CN: 权限
+user.authorization:
+  zh-HK: 用戶權限
+  en-US: User Authorization
+  zh-CN: 用户权限
+project.role.authorization:
+  zh-HK: 項目角色權限
+  en-US: Project Role Authorization
+  zh-CN: 项目角色权限
+collaborators:
+  zh-HK: 合作者
+  en-US: Collaborators
+  zh-CN: 合作者
+add.user:
+  zh-HK: 添加用戶
+  en-US: Add User
+  zh-CN: 添加用户
+add.project:
+  zh-HK: 添加項目
+  en-US: Add Project
+  zh-CN: 添加项目
+add.roles:
+  zh-HK: 添加角色
+  en-US: Add Roles
+  zh-CN: 添加角色
+add.user.placeholder:
+  zh-HK: 搜索用戶
+  en-US: Search for users
+  zh-CN: 搜索用户
+add.project.placeholder:
+  zh-HK: 搜索項目
+  en-US: Search for project
+  zh-CN: 搜索项目
+add.roles.placeholder:
+  zh-HK: 搜索角色
+  en-US: Search for roles
+  zh-CN: 搜索角色
+edit.dataset.id.tip:
+  zh-HK: 數據集ID只能被修改一次
+  en-US: Dataset ID can only be modified once
+  zh-CN: 数据集ID只能被修改一次
+previewable:
+  en-US: Previewable
+  zh-HK: 可預覽
+  zh-CN: 可预览
+nonpreviewable:
+  en-US: Non-Previewable
+  zh-HK: 不可预覽
+  zh-CN: 不可預览
+downloadable:
+  en-US: Downloadable
+  zh-HK: 可下載
+  zh-CN: 可下载
+nondownloadable:
+  en-US: Non-Downloadable
+  zh-HK: 不可下載
+  zh-CN: 不可下载
+created:
+  en-US: Created
+  zh-HK: 創建
+  zh-CN: 创建于
+timealphabetic:
+  en-US: Time Alphabetic
+  zh-HK: 時間字母
+  zh-CN: 时间字母
+filiter:
+  en-US: Filiter
+  zh-HK: 過濾
+  zh-CN: 过滤
+sorting:
+  en-US: Sorting
+  zh-HK: 排序
+  zh-CN: 排序
+datasets.search:
+  en-US: Search datasets
+  zh-HK: 搜索數據集
+  zh-CN: 搜索数据集
+project.search:
+  en-US: Search project
+  zh-HK: 搜索項目
+  zh-CN: 搜索项目
+budgetType:
+  en-US: Budget type
+  zh-HK: 費用類型
+  zh-CN: 费用类型
+soft.limit:
+  en-US: Soft limit
+  zh-HK: 軟限制
+  zh-CN: 软限制
+hard.limit:
+  en-US: Hard limit
+  zh-HK: 硬限制
+  zh-CN: 硬限制
+lineage:
+  en-US: Lineage
+  zh-HK: 血統
+  zh-CN: 血统
+signin:
+  en-US: Sign In
+  zh-HK: 登入
+  zh-CN: 登入
+editable:
+  en-US: Editable
+  zh-HK: 可編輯
+  zh-CN: 可编辑
+noneditable:
+  en-US: Non editable
+  zh-HK: 不可編輯
+  zh-CN: 不可编辑
+newVersion:
+  en-US: New version
+  zh-HK: 新版本
+  zh-CN: 新版本

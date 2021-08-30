@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { FormattedMessage } from "react-intl";
 import { connect, useDispatch } from "react-redux";
 
 const Home = ({ user: { name, age } }) => {
@@ -9,8 +10,12 @@ const Home = ({ user: { name, age } }) => {
 
   return (
     <div>
-      <div>name: {name}</div>
-      <div>age: {age}</div>
+      <div>
+        <FormattedMessage id="name" />: {name}
+      </div>
+      <div>
+        <FormattedMessage id="age" />: {age}
+      </div>
     </div>
   );
 };

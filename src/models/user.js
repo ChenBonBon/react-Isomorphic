@@ -15,7 +15,7 @@ export const user = {
   },
   effects: (dispatch) => ({
     async fetchUser() {
-      const res = await Get("/mock/fetchUser");
+      const res = await Get(`/mock/fetchUser`);
       const { name, age } = res;
       dispatch.user.SET_USER({ name, age });
     },
