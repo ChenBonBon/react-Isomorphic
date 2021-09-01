@@ -9,6 +9,7 @@ import zh_CN from "../../locales/zh-CN.json";
 import zh_HK from "../../locales/zh-HK.json";
 import routes from "../../routes";
 import { createStore } from "../../store";
+import { getItem } from "../../utils/cookie";
 
 const { matchRoutes } = require("react-router-config");
 
@@ -20,27 +21,16 @@ const statsFile = resolve("../../dist/server/loadable-stats.json");
 
 const extractor = new ChunkExtractor({ statsFile });
 
-const render = (request) => {
+const render = (ctx) => {
+  const { request } = ctx;
   const store = createStore();
   const { cookie } = request.header;
-
-  const getLanguageFromCookie = () => {
-    let language = null;
-    if (cookie) {
-      const cookieKeyValues = cookie.split(";");
-      cookieKeyValues.forEach((item) => {
-        const [key, value] = item.trim().split("=");
-        if (key === "language") {
-          language = value;
-        }
-      });
-    }
-
-    return language;
-  };
+  store.dispatch.global.updateContext({
+    context: ctx,
+  });
 
   const getMessage = () => {
-    const language = getLanguageFromCookie() || "en_US";
+    const language = getItem("language", cookie) || "en_US";
     let message = en_US;
     switch (language) {
       case "zh_CN":

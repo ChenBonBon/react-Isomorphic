@@ -1,1 +1,1 @@
-window.configLanguage = 'umi_locale';
+globalThis.configLanguage = "umi_locale";

@@ -1,4 +1,5 @@
 import { Tabs } from "antd";
+import { connect } from "react-redux";
 import { Route, Switch, useHistory, useLocation } from "react-router-dom";
 
 const { TabPane } = Tabs;
@@ -32,4 +33,4 @@ const UserLayout = ({ childRoutes }) => {
   );
 };
 
-export default UserLayout;
+export default connect(({ global }) => ({ global }))(UserLayout);

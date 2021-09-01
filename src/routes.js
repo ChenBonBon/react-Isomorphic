@@ -16,7 +16,7 @@ const routes = [
         component: loadable(() => import("@client/pages/User/Index")),
         exact: true,
         asyncData: (store, params) => {
-          return store.dispatch.user.fetchUser();
+          return store.dispatch.user.fetchUser(params);
         },
       },
       {

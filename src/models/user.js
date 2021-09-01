@@ -1,4 +1,4 @@
-import { Get } from "../request";
+import { fetchUser } from "../services/user";
 
 export const user = {
   state: {
@@ -14,9 +14,9 @@ export const user = {
     },
   },
   effects: (dispatch) => ({
-    async fetchUser() {
+    async fetchUser(params) {
       try {
-        const res = await Get(`${globalThis.mockApi}/fetchUser`);
+        const res = await fetchUser(params);
         const { name, age } = res;
         dispatch.user.SET_USER({ name, age });
       } catch (error) {

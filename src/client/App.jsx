@@ -26,7 +26,7 @@ const App = ({ preloadedState, cookie }) => {
 
   const changeLang = (value) => {
     Cookies.set("language", value);
-    global.window.location.reload();
+    window.location.reload();
   };
 
   return (

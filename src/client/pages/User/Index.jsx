@@ -1,5 +1,4 @@
 import { Spin } from "antd";
-import Cookies from "js-cookie";
 import { useEffect } from "react";
 import { FormattedMessage } from "react-intl";
 import { connect, useDispatch } from "react-redux";
@@ -8,9 +7,7 @@ const UserIndex = ({ user, fetchLoading }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const language = Cookies.get("language");
-
-    dispatch.user.fetchUser(language);
+    dispatch.user.fetchUser();
   }, []);
 
   return (
