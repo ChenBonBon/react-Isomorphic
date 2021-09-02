@@ -60,10 +60,6 @@ export default function request(url, options, errorHandler) {
     }
   }
 
-  if (typeof window === "undefined") {
-    url = `http://localhost${url}`;
-  }
-
   return fetch(url, newOptions)
     .then((response) => {
       if (errorHandler) return response;

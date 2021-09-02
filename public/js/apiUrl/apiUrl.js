@@ -306,4 +306,4 @@ globalThis.PipelineApi =
 globalThis.showPoints = true;
 
 // 测试使用
-globalThis.mockApi = "/mock";
+globalThis.mockApi = "http://localhost/mock";
