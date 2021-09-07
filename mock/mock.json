@@ -6,6 +6,7 @@
     "displayName": "@cword(2|5)",
     "email": "@email()",
     "mobile": "@integer(0)",
-    "system_role": ""
+    "system_role": "",
+    "company": "@cword(2|5)"
   }
 }

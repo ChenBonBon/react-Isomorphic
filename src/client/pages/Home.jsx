@@ -2,7 +2,11 @@ import { useEffect } from "react";
 import { FormattedMessage } from "react-intl";
 import { connect, useDispatch } from "react-redux";
 
-const Home = ({ user: { name, age } }) => {
+const Home = ({
+  user: {
+    user: { name, age },
+  },
+}) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch.user.fetchUser();

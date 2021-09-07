@@ -3,7 +3,12 @@ import { useEffect } from "react";
 import { FormattedMessage } from "react-intl";
 import { connect, useDispatch } from "react-redux";
 
-const UserIndex = ({ user, fetchLoading }) => {
+const UserIndex = ({
+  user: {
+    user: { name, age },
+  },
+  fetchLoading,
+}) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -13,10 +18,10 @@ const UserIndex = ({ user, fetchLoading }) => {
   return (
     <Spin spinning={fetchLoading}>
       <h1>
-        <FormattedMessage id="current.name" />: {user.name}
+        <FormattedMessage id="current.name" />: {name}
       </h1>
       <h1>
-        <FormattedMessage id="current.age" />: {user.age}
+        <FormattedMessage id="current.age" />: {age}
       </h1>
     </Spin>
   );

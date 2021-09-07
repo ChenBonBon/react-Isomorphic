@@ -23,6 +23,9 @@ const routes = [
         path: "/user/data",
         component: loadable(() => import("@client/pages/User/Data")),
         exact: true,
+        asyncData: (store, params) => {
+          return store.dispatch.user.fetchUser(params);
+        },
       },
       {
         path: "/user/setting",

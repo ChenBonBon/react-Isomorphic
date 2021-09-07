@@ -2,14 +2,13 @@ import { fetchUser } from "../services/user";
 
 export const user = {
   state: {
-    name: "",
-    age: 0,
+    user: {},
   },
   reducers: {
     SET_USER(state, payload) {
       return {
         ...state,
-        ...payload,
+        user: payload,
       };
     },
   },
@@ -17,8 +16,7 @@ export const user = {
     async fetchUser(params) {
       try {
         const res = await fetchUser(params);
-        const { name, age } = res;
-        dispatch.user.SET_USER({ name, age });
+        dispatch.user.SET_USER(res);
       } catch (error) {
         console.error(error);
       }
